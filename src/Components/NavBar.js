@@ -33,7 +33,7 @@
       const { setPriceValue, priceValue, setToggleCurr, Img, qty, toggle, toggleDetV2 } = this.context;
       
       return (
-        <div>
+        <div className='container'>
           <div className='flex-body'>
             <div className='one_type'>
               <NavLink className='links-style' end to="/" >All</NavLink>
