@@ -1,0 +1,724 @@
+body {
+
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+    font-family: Raleway;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.container {
+    width: 1085px;
+    margin: auto;
+}
+
+.flex-body {
+
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.one_type {
+    display: flex;
+
+
+}
+
+.size {
+    font-weight: bold;
+    margin-top: 15px;
+    font-size: 20px;
+
+}
+
+.PriceDet {
+    font-weight: bold;
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+.links-style {
+    margin-top: 15px;
+    margin-left: 15px;
+    font-size: 20px;
+}
+
+.active {
+    color: #52d67a;
+    min-height: 25px;
+    border-bottom: 2px solid #52d67a;
+}
+
+.logo img {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+}
+
+.cart {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    position: relative;
+}
+
+.cart_price {
+    display: flex;
+    align-items: center;
+}
+
+.price {
+
+    cursor: pointer;
+    width: 10px;
+    height: 5px;
+    margin-left: 8px;
+    margin-top: 10px;
+
+}
+
+.priceee {
+
+    display: flex;
+    align-items: center;
+    margin-right: 25px;
+}
+
+.Dollar {
+    font-size: 20px;
+}
+
+.Details {
+    display: flex;
+}
+
+.title-img {
+    display: flex;
+    justify-content: space-between;
+}
+
+.trolly {
+    border-radius: 100%;
+    cursor: pointer;
+    position: absolute;
+    top: 95%;
+    right: 10%
+}
+
+.CartLayout {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 2rem
+}
+
+.colorPRice {
+    background-color: #d9dade;
+    width: 80px;
+    font-weight: bold;
+    padding-top: 6px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+}
+
+.cartImg {
+    padding: 3rem 2rem;
+}
+
+.cartOverlay {
+    padding: 3rem 2rem;
+    position: relative;
+}
+
+.cartImg:hover {
+    cursor: pointer;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+
+.sign {
+    cursor: pointer;
+    width: 80px;
+    font-weight: bold;
+    padding-top: 6px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+}
+
+.signSelect {
+    color: #9c9faa;
+}
+
+.signNormal {
+    color: #000;
+    font-weight: bold;
+}
+
+select {
+    appearance: none;
+    cursor: pointer;
+    border: none;
+}
+
+option {
+    cursor: pointer;
+}
+
+.sub-menu {
+    position: absolute;
+    z-index: 100;
+    right: 15%;
+    width: 60px;
+    height: 190px;
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+
+.curr-info {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.curr-info-Items {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    justify-content: center;
+}
+
+.items-menu {
+    position: absolute;
+    right: 9%;
+    width: 370px;
+    z-index: 9999;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+
+}
+.TotalDiv{
+    font-weight: bold;
+}
+.MenuTITlE {
+    margin-bottom: 15px;
+
+}
+
+.spanTitle {
+    font-weight: bold;
+}
+
+.details {
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.Quantity {
+    display: flex;
+    flex-direction: column;
+}
+
+.color {
+    border-radius: 50%;
+}
+
+.oneSize {
+    display: inline-block;
+}
+
+.detailseses {
+    display: inline;
+    margin-right: 3px
+}
+
+button {
+    background-color: #fff;
+    border: 1px solid #000;
+}
+
+.plus {
+    margin-top: 20px;
+    cursor: pointer;
+
+}
+
+.minus {
+    cursor: pointer;
+}
+
+.Number {
+    margin-top: 20px;
+
+}
+
+.Total {
+    display: flex;
+    justify-content: space-between;
+}
+
+.TotalPrice {
+    margin-right: 20px;
+}
+
+.ViewBag {
+    background-color: #fff;
+    border: 1px solid #000;
+    padding: 10px 40px;
+    cursor: pointer;
+    /* margin-right: 40px; */
+}
+
+.Checkout {
+    background-color: #52d67a;
+    color: #fff;
+    border: 1px solid #52d67a;
+    padding: 10px 40px;
+    cursor: pointer;
+
+}
+
+.my-buttons {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    background-color: #000;
+    cursor: pointer;
+}
+
+.Content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.overlay-Price,
+.overlay-title {
+    color: #b1b3ba;
+}
+
+.p-overlay {
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    color: #9c9faa;
+    font-size: 25px;
+}
+
+.activeCurrDet {
+    opacity: 1;
+    visibility: visible;
+}
+
+.inactiveCurrDet {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.activeCurr {
+    color: #9c9faa;
+}
+
+.inactiveCurr {
+    color: #000;
+}
+
+.CartNumber {
+    background-color: #000;
+    color: #fff;
+    border-radius: 100%;
+    padding: .3px 4px;
+    position: absolute;
+    margin-left: 15px;
+    top: 1pc;
+}
+
+.hr {
+    margin-top: 30px;
+}
+
+.PDetails {
+    display: flex;
+    justify-content: space-around;
+}
+
+.smallImgs {
+    cursor: pointer;
+}
+
+.PDtitles {
+    margin-top: 100px;
+}
+
+.btnD {
+    margin-right: 9px;
+}
+
+.myProdName {
+    margin-top: 15px;
+    font-size: 19px;
+}
+
+.myProdId {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.myProdBtn {
+    background-color: #52d67a;
+    cursor: pointer;
+    padding: 15px 8px;
+    color: #fff;
+    border: none;
+    margin-top: 15px;
+}
+
+.outOfStockBtn {
+    background-color: #8f9992;
+    cursor: pointer;
+    padding: 15px 8px;
+    color: #000;
+    border: none;
+    margin-top: 15px;
+}
+
+.oneSize:hover {
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+.oneSizeColor {
+    display: inline-block;
+}
+
+.oneSizeColor:hover {
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+.oneSizeActive {
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+.details-title {
+    font-weight: bold;
+    font-size: 19px;
+}
+
+.details-price {
+    font-size: 17px;
+}
+
+.CartClass {
+    margin-top: 15px;
+    font-size: 35px;
+}
+
+.CartHr {
+    margin-top: 25px;
+}
+
+.totalCart {
+    display: flex;
+}
+
+.CartBtn {
+    background-color: #52d67a;
+    cursor: pointer;
+    padding: 14px 28px;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+}
+
+.cartItemsDetails {
+    display: flex;
+    justify-content: space-between;
+}
+
+.overlaySec {
+    position: absolute;
+    background-color: #000;
+    width: 99.4%;
+    height: 300%;
+    opacity: 0.2;
+    z-index: 5000;
+}
+
+.oneActiveColor {
+    border: 2px solid #000;
+}
+
+.myCartBorder {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 250px;
+    border-top: 1px solid #E5E5E5;
+    margin-top: 15px;
+
+}
+
+.mycartBorderr {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    border-top: 1px solid #E5E5E5;
+
+
+}
+
+.myCartName {
+    width: 84px;
+    height: 40px;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 40px;
+    text-transform: uppercase;
+    color: #1D1F22;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.myCartInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 288px;
+    width: 300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.qtyImage {
+    display: flex;
+    justify-content: space-between;
+    height: 288px;
+    width: 269px;
+
+}
+
+.qtyControl {
+    height: 288px;
+    width: 45px;
+
+
+}
+
+.mainCartImage {
+    height: 288px;
+    width: 200px;
+}
+
+.inMainCart {
+    margin-bottom: 0;
+}
+
+.qtyControl {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.id {
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+    color: #1D1F22;
+    margin-bottom: 16px;
+}
+
+.name {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+    color: #1D1F22;
+    margin-bottom: 15px;
+}
+
+.amount {
+    width: 86px;
+    height: 46px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+
+    display: flex;
+    align-items: center;
+
+    color: #1D1F22;
+}
+
+.atributes {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+}
+
+.QtyBtnCart {
+    width: 45px;
+    height: 45px;
+    background: #FFFFFF;
+    cursor: pointer;
+}
+
+.QtyBtnCart:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+
+
+.pictureSwitch {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 56px;
+    height: 24px;
+    left: 130px;
+    top: 245px;
+}
+
+.toLeft {
+    width: 24px;
+    height: 24px;
+    background: rgba(0, 0, 0, 0.73);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.toRigth {
+    width: 24px;
+    height: 24px;
+    background: rgba(0, 0, 0, 0.73);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.myCartContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.imgQtyContainer {
+    display: flex;
+
+}
+
+.qtyContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+.Size {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+    color: #1D1F22;
+    margin-bottom: 10px;
+}
+
+.btnsImage {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.btnSizeCart {
+    display: inline;
+    margin-right: 15px;
+    cursor: pointer;
+    padding: 10px 25px;
+}
+
+.myCartTax {
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 30px;
+
+}
+
+.myCartTaxSpan {
+    margin-top: 30px;
+    font-size: 25px;
+}
+
+.prevImg {
+    background-color: #000;
+    margin-right: 15px;
+    cursor: pointer;
+    width: 20px;
+    height: 20px
+}
+
+.nextImg {
+    background-color: #000;
+    cursor: pointer;
+    width: 20px;
+    height: 20px
+}
+::-webkit-scrollbar{
+    width: 10px;
+    border-radius: 50%;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #888888;
+}
+.ScrollCart{
+    overflow-y: auto;
+    max-height: 550px;
+}
+/* .details-Quantity{
+margin-top: ;
+} */
