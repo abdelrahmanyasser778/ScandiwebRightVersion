@@ -172,7 +172,7 @@ option {
 .sub-menu {
     position: absolute;
     z-index: 100;
-    right: 15%;
+    transform: translate(0, 60%);
     width: 60px;
     height: 190px;
     background-color: #fff;

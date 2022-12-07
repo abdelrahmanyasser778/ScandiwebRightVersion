@@ -5,7 +5,7 @@
   import logo from '../images/header-logo.png'
   import cart from '../images/cart.png'
   import ItemsMenu from './ItemsMenu';
-  import { NavLink } from 'react-router-dom';
+  import { Link, NavLink } from 'react-router-dom';
   import Prices from './Prices'
   class NavBar extends Component {
     static contextType = mainContext;
@@ -40,28 +40,20 @@
               <NavLink className='links-style' to="/cloth">CLOTHES</NavLink>
               <NavLink className='links-style' to="/tech">TECH</NavLink>
             </div>
+          
             <div className='logo'>
+            <Link  to="/">
               <img alt="" src={logo} />
+              </Link>
             </div>
+
             <div className='cart_price'>
               <div className='priceee'>
                 <p className='Dollar'>{priceValue}</p>
-                <img alt="" className='price'
-                  onClick={toggle} src={Img}
-                />
-              </div>
-              <div>
-                {
-                  qty > 0 ? <div className='CartNumber'>{qty}</div> : null
-                }
-                <img alt="" className='cart'
-                  onClick={toggleDetV2}
-                  src={cart} />
-              </div>
-            </div>
-          </div>
-          <div className={`sub-menu ${this.context.toggleCurr ? 'activeCurrDet' : 'inactiveCurrDet'}`}>
-            <div className='curr-info'>
+                <img alt="" className='price'onClick={toggle} src={Img}/>
+            
+            <div className={`sub-menu ${this.context.toggleCurr ? 'activeCurrDet' : 'inactiveCurrDet'}`}>
+              <div className='curr-info'>
               {
                 this.state.PriceData ? (this.state.PriceData.map((item, index) => {
                   return (
@@ -69,6 +61,15 @@
                   )
                 })) : <h2>return null</h2>
               }
+            </div>
+          </div>
+          </div>
+              <div>
+                {
+                  qty > 0 ? <div className='CartNumber'>{qty}</div> : null
+                }
+                <img alt="" className='cart' onClick={toggleDetV2} src={cart} />
+              </div>
             </div>
           </div>
           {
